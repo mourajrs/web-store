@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <Link rel="stylesheet" href="./config/reset.css">
+    <Link rel="stylesheet" href="style.css">
+
+    <title>Blog Html & Css</title>
+    <script src="./config/config.js"></script>
+    <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+  </head>
+  <body>    
+    <div class="body-container">
+
+      <header class="header flex">        
+        <a href="index.html">
+          <span>
+            <img src="assets/logo.png" alt="Logo de acesso a página inicial">
+          </span>        
+        </a>
+        <form action="" method="GET">
+          <input id="input-busca"
+            class="search"
+            placeholder="Busque aqui seu produto" 
+            type="text" name="query" 
+            value=""
+          >        
+        </form>
+      </header>
+
+      <nav class="nav">
+        <ul class="menu flex">
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Ofertas do dia</a></li>          
+          <li><a href="#">Favoritos</a></li>
+          <li><a href="#">Produtos visualizados</a></li>
+        </ul>
+      </nav>
+
+      <div class="container-section">
+        <section class="section flex">    
+          <ul class="side-menu">
+            <li class="side-menu-itens"><p>Categoria</p></li>          
+
+              <div class="order-itens-checkbox">
+                <input type="checkbox" 
+                  id="eletronicos" 
+                  name="eletronicos">
+                <label for="eletronicos">Eletrônicos</label>
+              </div>
+
+              <div class="order-itens-checkbox">
+                <input type="checkbox" 
+                  id="joalheria" 
+                  name="joalheria">
+                <label for="joalheria">Joalheria</label>
+              </div>
+
+              <div class="order-itens-checkbox">
+                <input type="checkbox" 
+                  id="roupas-femininas" 
+                  name="roupas-femininas">
+                <label for="roupas-femininas">Roupas femininas</label>
+              </div>
+
+              <div class="order-itens-checkbox">
+                <input type="checkbox" 
+                  id="roupas-masculinas" 
+                  name="roupas-masculinas">
+                <label for="roupas-masculinas">Roupas masculinas</label>
+              </div>  
+            
+              <div class="side-menu-itens-select">
+                <label for="qtd-products"><p>Exibir</p></label>
+                <select class="exibir-itens" name="products" id="qtd-products">
+                  <option value="dez">10</option>
+                  <option value="quinze">15</option>
+                  <option value="vinte">20</option>
+                  <option value="vinte-cinco">25</option>          
+                </select>  
+              </div>
+          </ul>
+          
+          <div class="container-products">
+            <div class="flex wrap">
+              <div id="divBody" class="flex wrap"></div>          
+            </div>       
+          </div>
+
+        </section>
+      </div>      
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>

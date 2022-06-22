@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <Link rel="stylesheet" href="../../config/reset.css">
+    <Link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../pages/product/product.css">
+
+    <title>Blog Html & Css</title>
+    <script src="../../config/config.js"></script>
+    <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"></script>
+    <script src="../../pages/product/product-detail.js"></script>
+
+  </head>
+  <body>    
+    <div class="body-container">
+
+      <header class="header flex">        
+        <a href="../../index.html">
+          <span>
+            <img src="../../assets/logo.png" alt="Logo de acesso a página inicial">
+          </span>        
+        </a>
+        <form action="" method="GET">
+          <input id="input-busca"
+            class="search"
+            placeholder="Busque aqui seu produto" 
+            type="text" name="query" 
+            value=""
+          >        
+        </form>
+      </header>
+
+      <nav class="nav">
+        <ul class="menu flex">
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Ofertas do dia</a></li>          
+          <li><a href="#">Favoritos</a></li>
+          <li><a href="#">Produtos visualizados</a></li>
+        </ul>
+      </nav>
+
+      <div class="container-section-product">
+        <section class="section-product flex"> 
+
+          <div class="galery">
+            <div class="galery-mini-image">
+              
+            </div>
+            <div class="galery-image">
+              <img id="productImage" src="" />
+            </div>
+          </div>
+
+          <div class="container-info-product">
+            <div class="container-info-product-generic">
+
+              <div class="container-title">
+                <p id="productTitle"></p> 
+              </div>
+
+              <div class="container-description">
+                <p>Descrição</p>
+                <p id="productDescription"></p>
+              </div>
+              
+              <div class="price">
+                <p id="productPrice"></p> 
+                <p id="productPriceSplit"></p>
+              </div>                        
+            </div>
+
+            <div class="container-btn-generic">
+              <div class="container-btn-comprar">
+                <button class="btn-comprar-generic" name="button">Comprar agora</button>
+              </div> 
+              
+              <div class="container-btn-comprar">
+                <button class="btn-add-cart" name="button">Adicionar ao carrinho</button>
+              </div> 
+            </div>            
+          </div> 
+        </section>
+
+        <section class="section-galery">
+          <div id="divGaleryItens"></div> 
+        </section>
+      </div>      
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>
