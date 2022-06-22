@@ -1,2 +1,8 @@
 # web-store
-Loja web utilizando CSS, HTML5, Javascript para fins de conhecimento.
+
+### Sobre
+
+Site de vendas criado usando CSS3, HTML5 e Javascript para fins de aprendizado.
+
+Para acessar o página do projeto acesse o link abaixo:
+>https://mourajrs.github.io/web-store/
