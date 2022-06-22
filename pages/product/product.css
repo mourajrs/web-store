@@ -100,7 +100,7 @@
   margin-left: 20px;
   color: green;
   font-weight: bold;
-  font-size: 1.1rem
+  font-size: 1.1rem;  
 }
 
 .container-btn-generic {
@@ -123,6 +123,10 @@
   border-radius: 10px;
   border: none;
   background-color: #BEE3F9;
+}
+
+.btn-add-cart:hover {
+  background-color: #64a8d0
 }
 
 #divGaleryItens {
@@ -155,12 +159,21 @@
   max-height: 100%;  
 }
 
+.mini-galery-info-inside {
+  height: 100%;
+}
+
 .mini-galery-info {
   display: flex;
   margin-top: 20px;
   height: 160px;    
   flex-direction: column;  
   justify-content: center;      
+}
+
+.desc-mini-preco {
+  height:50px;
+  background-color: red;
 }
 
 .product-price-split {
@@ -170,8 +183,22 @@
 
 .desc-mini-galery {
   margin-top: 20px;
+  width: 28ch;
+  text-align: justify;
 }
 
-#idBtnComprar{
-  width: 100%;    
+.container-btn-comprar-galery {
+  height: 25%
+}
+
+.btn-mini-comprar-galery{
+  width: 100%;   
+  height: 100%; 
+  border-radius: 10px;
+  border: none;
+  background-color: #57B4E9;
+}
+
+.btn-mini-comprar-galery:hover {
+  background-color: #64a8d0
 }

@@ -123,18 +123,27 @@ div nav ul li a {
   margin-bottom: 10px;
   border-radius: 20px;  
   margin-left: 10px;
-  box-shadow: 0 0 0.5em gray;  
+  box-shadow: 0 0 0.5em gray;
+  justify-content: center;
 }
 
 .btn-comprar {
-  width: 100%;
+  width: 80%;
+  display: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-comprar button {
   width: 100%;
-  height: 40px;
+  height: 35px;
   border: 0;
   border-radius: 20px;
+  background-color: #57B4E9;  
+}
+
+.btn-comprar button:hover {
+  background-color: #0d6fa8
 }
 
 .btn-comprar-generic {
@@ -143,6 +152,10 @@ div nav ul li a {
   border-radius: 10px;
   border: none;
   background-color: #57B4E9;
+}
+
+.btn-comprar-generic:hover {
+  background-color: #0d6fa8
 }
 
 .list-product-img {
@@ -161,7 +174,7 @@ div nav ul li a {
 .data-product{
   margin-top: 20px;
   margin-left: 10px; 
-  height: 80px;
+  height: 70px;
   width: 100%;   
 }
 

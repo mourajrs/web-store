@@ -28,7 +28,7 @@ function getProduct(idProduct) {
       productImage.src = data.image;
       productTitle.textContent = data.title;
       productPrice.textContent = `R$ `+data.price;
-      productPriceSplit.textContent = `Ou por apenas 10x de R$ `+data.price/10;
+      productPriceSplit.textContent = `Ou por apenas 10x de R$ `+(data.price/10).toFixed(2);
       productDescription.textContent = data.description;       
     })
     .catch(error => console.log(error))  
@@ -49,17 +49,21 @@ function getCategory(category) {
             <img src="${data.image}">
           </div>
           <div class="mini-galery-info">
-            <p class="desc-mini-preco">
-              R$ ${data.price}
-            </p> 
-            <p class="product-price-split">
-              Ou por apenas 10x de R$ ${data.price/10}
-            </p>
-            <p class="desc-mini-galery">
-              ${data.title}
-            </p>
-            <div class="btn-comprar-galery">
-              <button id="${idBtnComprar}" name="button">Comprar</button>
+            <div class="mini-galery-info-inside"
+              <p class="desc-mini-preco">
+                R$ ${data.price}
+              </p> 
+              <p class="product-price-split">
+                Ou por apenas 10x de R$ ${(data.price/10).toFixed(2)}
+              </p>
+              <p class="desc-mini-galery">
+                ${data.title}
+              </p>
+            </div>
+            <div class="container-btn-comprar-galery">
+              <button class="btn-mini-comprar-galery" id="${idBtnComprar}" name="button">
+                Comprar
+              </button>
             </div>                  
           </div>          
         ` 
